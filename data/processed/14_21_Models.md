@@ -1,0 +1,3 @@
+## 2.1 Models  
+**RAG-Sequence Model** The RAG-Sequence model uses the same retrieved document to generate the complete *sequence*. Technically, it treats the retrieved document as a single latent variable that is marginalized to get the seq2seq probability $p(y|x)$ via a top-K approximation. Concretely, the top K documents are retrieved using the retriever, and the generator produces the output sequence probability for each document, which are then marginalized,  
+$$p_{RAG-Sequence}(y|x) \approx \sum_{z \in top-k(p(\cdot|x))} p_\eta(z|x) p_\theta(y|x, z) = \sum_{z \in top-k(p(\cdot|x))} p_\eta(z|x) \prod_{i}^{N} p_\theta(y_i|x, z, y_{1:i-1})$$

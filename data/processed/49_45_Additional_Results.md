@@ -1,0 +1,3 @@
+7  
+<table><tr><td></td><th>Factuality</th><th>Specificity</th></tr><tr><td>BART better</td><td>7.1%</td><td>16.8%</td></tr><tr><td>RAG better</td><td>42.7%</td><td>37.4%</td></tr><tr><td>Both good</td><td>11.7%</td><td>11.8%</td></tr><tr><td>Both poor</td><td>17.7%</td><td>6.9%</td></tr><tr><td>No majority</td><td>20.8%</td><td>20.1%</td></tr></table>  
+<table><tr><td></td><th>MSMARCO</th><th>Jeopardy QGen</th></tr><tr><td>Gold</td><td>89.6%</td><td>90.0%</td></tr><tr><td>BART</td><td>70.7%</td><td>32.4%</td></tr><tr><td>RAG-Token</td><td>77.8%</td><td>46.8%</td></tr><tr><td>RAG-Seq.</td><td>83.5%</td><td>53.8%</td></tr></table>

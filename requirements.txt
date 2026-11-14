@@ -1,0 +1,6 @@
+qdrant-client
+vectorstore
+beautifulsoup4
+sentence-transformers
+ollama
+pyyaml

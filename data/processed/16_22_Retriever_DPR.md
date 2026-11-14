@@ -1,0 +1,4 @@
+## 2.2 Retriever: DPR  
+The retrieval component $p_\eta(z|x)$ is based on DPR [26]. DPR follows a bi-encoder architecture:  
+$$p_\eta(z|x) \propto \exp(d(z)^\top q(x)) \quad d(z) = BERT_d(z), \quad q(x) = BERT_q(x)$$  
+where $d(z)$ is a dense representation of a document produced by a $BERT_{BASE}$ *document encoder* [8], and $q(x)$ a query representation produced by a *query encoder*, also based on $BERT_{BASE}$. Calculating top-K($p_\eta(\cdot|x)$), the list of $k$ documents $z$ with highest prior probability $p_\eta(z|x)$, is a Maximum Inner Product Search (MIPS) problem, which can be approximately solved in sub-linear time [23]. We use a pre-trained bi-encoder from DPR to initialize our retriever and to build the document index. This retriever was trained to retrieve documents which contain answers to TriviaQA [24] questions and Natural Questions [29]. We refer to the document index as the *non-parametric memory*.

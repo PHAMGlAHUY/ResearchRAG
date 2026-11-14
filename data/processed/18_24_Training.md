@@ -1,0 +1,5 @@
+## 2.4 Training  
+We jointly train the retriever and generator components without any direct supervision on what document should be retrieved. Given a fine-tuning training corpus of input/output pairs $(x_j, y_j)$, we  
+minimize the negative marginal log-likelihood of each target, $\sum_j -\log p(y_j|x_j)$ using stochastic gradient descent with Adam [28]. Updating the document encoder BERT$_d$ during training is costly as it requires the document index to be periodically updated as REALM does during pre-training [20]. We do not find this step necessary for strong performance, and keep the document encoder (and index) fixed, only fine-tuning the query encoder BERT$_q$ and the BART generator.  
+### 2.5 Decoding  
+At test time, RAG-Sequence and RAG-Token require different ways to approximate $\arg\max_y p(y|x)$.

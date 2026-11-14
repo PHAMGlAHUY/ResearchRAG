@@ -1,0 +1,1 @@
+[68] Wanjun Zhong, Jingjing Xu, Duyu Tang, Zenan Xu, Nan Duan, Ming Zhou, Jiahai Wang, and Jian Yin. Reasoning over semantic-level graph for fact checking. *ArXiv*, abs/1909.03745, 2019. URL https://arxiv.org/abs/1909.03745.

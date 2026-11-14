@@ -1,0 +1,1 @@
+$y$ was not generated during beam search from $x, z_i$. This avoids the need to run additional forward passes once the candidate set $Y$ has been generated. We refer to this decoding procedure as "Fast Decoding."
