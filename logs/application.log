@@ -1159,3 +1159,100 @@
 [2026-11-14 18:43:23] INFO - vector_database - Deleted old points of source 2005.11401v4.md.
 [2026-11-14 18:43:23] INFO - vector_database - Upserted 69 points into collection nmk_chatbot_collection
 [2026-11-14 18:43:23] INFO - ingestion - --- All chunks have been upserted to vector store ---
+[2026-11-14 18:54:12] INFO - chat - Starting retrieval for the question: What is RAG-Sequence?
+[2026-11-14 18:54:12] INFO - vector_database - Connecting to Qdrant via url
+[2026-11-14 18:54:13] INFO - vector_database - Successfully connected to Qdrant
+[2026-11-14 18:54:13] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 18:54:16] INFO - retrieval - Retrieved 10 documents
+[2026-11-14 18:54:16] INFO - chat - Retrieved 5 docs: [('2.1 Models', 1.0), ('2.5 Decoding', 0.533), ('A Implementation Details', 0.4), ('2.1 Models', 0.35), ('2 Methods', 0.343)]
+[2026-11-14 18:54:16] INFO - llm - Generating answer using model: qwen2.5:3b
+[2026-11-14 18:54:37] WARNING - chat - Question cannot be empty
+[2026-11-14 18:54:41] WARNING - chat - Question cannot be empty
+[2026-11-14 18:54:55] INFO - chat - Starting retrieval for the question: What is RAG-Sequence?
+[2026-11-14 18:54:59] ERROR - retrieval - Qdrant connection error: [WinError 10061] No connection could be made because the target machine actively refused it
+[2026-11-14 18:55:21] INFO - chat - Starting retrieval for the question: What is RAG-Sequence?
+[2026-11-14 18:55:21] INFO - retrieval - Retrieved 10 documents
+[2026-11-14 18:55:21] INFO - chat - Retrieved 5 docs: [('2.1 Models', 1.0), ('2.5 Decoding', 0.533), ('A Implementation Details', 0.4), ('2.1 Models', 0.35), ('2 Methods', 0.343)]
+[2026-11-14 18:55:21] INFO - llm - Generating answer using model: qwen2.5:3b
+[2026-11-14 18:55:25] ERROR - llm - Cannot connect to Ollama: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+[2026-11-14 19:22:59] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 19:23:49] INFO - vector_database - Connecting to Qdrant via url
+[2026-11-14 19:23:49] INFO - vector_database - Successfully connected to Qdrant
+[2026-11-14 19:24:42] INFO - chat - Starting retrieval for the question: What is RAG-Sequence?
+[2026-11-14 19:24:42] INFO - retrieval - Retrieved 10 documents
+[2026-11-14 19:24:42] INFO - chat - Retrieved 5 docs: [('2.1 Models', 1.0), ('2.5 Decoding', 0.533), ('A Implementation Details', 0.4), ('2.1 Models', 0.35), ('2 Methods', 0.343)]
+[2026-11-14 19:24:42] INFO - llm - Generating answer using model: qwen2.5:3b
+[2026-11-14 19:25:58] INFO - chat - Starting retrieval for the question: What is RAG-Sequence?
+[2026-11-14 19:26:02] ERROR - retrieval - Qdrant connection error: [WinError 10061] No connection could be made because the target machine actively refused it
+[2026-11-14 19:26:16] INFO - chat - Starting retrieval for the question: What is RAG-Sequence?
+[2026-11-14 19:26:16] INFO - retrieval - Retrieved 10 documents
+[2026-11-14 19:26:16] INFO - chat - Retrieved 5 docs: [('2.1 Models', 1.0), ('2.5 Decoding', 0.533), ('A Implementation Details', 0.4), ('2.1 Models', 0.35), ('2 Methods', 0.343)]
+[2026-11-14 19:26:16] INFO - llm - Generating answer using model: qwen2.5:3b
+[2026-11-14 19:26:20] ERROR - llm - Cannot connect to Ollama: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+[2026-11-14 19:27:48] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 19:27:51] INFO - chat - Starting retrieval for the question: What is RAG-Sequence?
+[2026-11-14 19:27:51] INFO - vector_database - Connecting to Qdrant via url
+[2026-11-14 19:27:52] INFO - vector_database - Successfully connected to Qdrant
+[2026-11-14 19:27:52] INFO - retrieval - Retrieved 10 documents
+[2026-11-14 19:27:52] INFO - chat - Retrieved 5 docs: [('2.1 Models', 1.0), ('2.5 Decoding', 0.533), ('A Implementation Details', 0.4), ('2.1 Models', 0.35), ('2 Methods', 0.343)]
+[2026-11-14 19:27:52] INFO - llm - Generating answer using model: qwen2.5:3b
+[2026-11-14 19:42:01] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 19:44:28] INFO - chat - Starting retrieval for the question: a
+[2026-11-14 19:44:28] INFO - vector_database - Connecting to Qdrant via url
+[2026-11-14 19:44:28] INFO - vector_database - Successfully connected to Qdrant
+[2026-11-14 19:44:28] INFO - retrieval - Retrieved 10 documents
+[2026-11-14 19:44:28] INFO - chat - Retrieved 5 docs: [('4.4 Fact Verification', 0.5), ('Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', 0.333), ('C Training setup Details', 0.25), ('3.3 Jeopardy Question Generation', 0.2), ('4.5 Additional Results', 0.167)]
+[2026-11-14 19:44:28] INFO - llm - Generating answer using model: qwen2.5:3b
+[2026-11-14 19:58:44] INFO - chat - Starting retrieval for the question: RAG là gì ?
+[2026-11-14 19:58:44] INFO - retrieval - Retrieved 10 documents
+[2026-11-14 19:58:44] INFO - chat - Retrieved 5 docs: [('4.1 Open-domain Question Answering', 0.643), ('4.5 Additional Results', 0.643), ('4.2 Abstractive Question Answering', 0.375), ('2.5 Decoding', 0.333), ('C Training setup Details', 0.333)]
+[2026-11-14 19:58:44] INFO - llm - Generating answer using model: qwen2.5:3b
+[2026-11-14 20:13:48] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 20:53:22] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 20:53:42] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 20:57:36] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:01:13] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:02:41] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:04:27] INFO - chat - Starting retrieval for the question: What is RAG-Sequence?
+[2026-11-14 21:04:27] INFO - vector_database - Connecting to Qdrant via url
+[2026-11-14 21:04:28] INFO - vector_database - Successfully connected to Qdrant
+[2026-11-14 21:04:28] INFO - retrieval - Retrieved 10 documents
+[2026-11-14 21:04:28] INFO - chat - Retrieved 5 documents: [('2 Methods', 1.0), ('2 Methods', 0.533), ('Appendices', 0.4), ('2 Methods', 0.35), ('2 Methods', 0.343)]
+[2026-11-14 21:04:28] INFO - llm - Streaming answer using model: qwen2.5:3b
+[2026-11-14 21:04:36] INFO - llm - Stream finished in 8.2s (248 character)
+[2026-11-14 21:10:41] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:11:22] INFO - vector_database - Connecting to Qdrant via url
+[2026-11-14 21:11:22] INFO - vector_database - Successfully connected to Qdrant
+[2026-11-14 21:14:34] INFO - chat - Starting retrieval for the question: RAG là gì
+[2026-11-14 21:14:34] INFO - retrieval - Retrieved 10 documents
+[2026-11-14 21:14:34] INFO - chat - Retrieved 5 documents: [('4 Results', 0.667), ('4 Results', 0.643), ('2 Methods', 0.333), ('Appendices', 0.333), ('1 Introduction', 0.327)]
+[2026-11-14 21:14:34] INFO - llm - Streaming answer using model: qwen2.5:3b
+[2026-11-14 21:14:46] INFO - llm - Stream finished in 12.1s (339 character)
+[2026-11-14 21:15:01] INFO - retrieval - Retrieved 10 documents
+[2026-11-14 21:15:01] INFO - chat - Retrieved 5 documents: [('1 Introduction', 0.5), ('4 Results', 0.333), ('4 Results', 0.25), ('4 Results', 0.2), ('Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', 0.167)]
+[2026-11-14 21:15:01] INFO - llm - Streaming answer using model: qwen2.5:3b
+[2026-11-14 21:15:19] INFO - llm - Stream finished in 17.8s (93 character)
+[2026-11-14 21:15:32] INFO - retrieval - Retrieved 10 documents
+[2026-11-14 21:15:32] INFO - chat - Retrieved 5 documents: [('4 Results', 0.5), ('Appendices', 0.333), ('4 Results', 0.25), ('1 Introduction', 0.2), ('4 Results', 0.167)]
+[2026-11-14 21:15:32] INFO - llm - Streaming answer using model: qwen2.5:3b
+[2026-11-14 21:15:50] INFO - llm - Stream finished in 17.4s (107 character)
+[2026-11-14 21:18:12] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:20:04] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:22:00] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:26:03] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:26:20] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:28:41] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:29:31] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:31:02] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:31:20] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:31:48] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:32:07] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:32:25] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:32:47] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:37:09] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:37:27] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:38:18] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:42:05] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:43:15] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 21:44:22] INFO - vector_database - Connecting to Qdrant via url
+[2026-11-14 21:44:23] INFO - vector_database - Successfully connected to Qdrant

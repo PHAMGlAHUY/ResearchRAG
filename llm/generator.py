@@ -7,6 +7,8 @@ import ollama
 from core.load_settings import load_settings
 from llm.prompt import build_messages
 
+from contextlib import contextmanager
+
 logger = logging.getLogger("llm")
 
 _cfg = load_settings()["llm"]
@@ -25,8 +27,7 @@ _options = {
 class LLMError(RuntimeError):
     """Ollama trả lỗi (ví dụ model chưa pull) hoặc lỗi không mong muốn khi sinh câu trả lời."""
 
-
-def generate_answer(context: str, question: str) -> str:
+def _check_inputs(context: str, question: str) -> None:
     if not context or not context.strip():
         raise ValueError("Context data cannot be empty.")
     if not question or not question.strip():
@@ -34,24 +35,48 @@ def generate_answer(context: str, question: str) -> str:
     if PROVIDER != "ollama":
         raise ValueError(f"Unsupported provider: {PROVIDER}")
 
-    start = time.perf_counter()
-    logger.info("Generating answer using model: %s", MODEL_NAME)
+@contextmanager
+def _translate_errors():
     try:
-        response = _client.chat(model=MODEL_NAME,
-                                messages=build_messages(context, question),
-                                options=_options)
-        answer = response["message"]["content"].strip()
-        logger.info("Answer generated in %.1fs (%d ký tự)", time.perf_counter() - start, len(answer))
-        return answer
-    except ollama.ResponseError as e:           # ví dụ: model chưa pull (404)
+        yield
+    except ollama.ResponseError as e:
         logger.error("Ollama API error: %s", e)
-        raise LLMError(f"Ollama trả về lỗi. Kiểm tra model đã được pull chưa (ollama pull {MODEL_NAME}).") from e
-    except (ConnectionError, httpx.ConnectError) as e:   # Ollama không chạy / sai base_url
+        raise LLMError(f"Ollama return error. Is ollama pulled ? (ollama pull {MODEL_NAME})") from e
+    except(ConnectionError, httpx.ConnectError) as e:
         logger.error("Cannot connect to Ollama: %s", e)
-        raise ConnectionError("Không kết nối được tới Ollama. Kiểm tra dịch vụ đã chạy và base_url trong settings.") from e
+        raise ConnectionError("Cannot connect to Ollama") from e
     except httpx.TimeoutException as e:
         logger.error("Ollama request timed out after %ss.", TIMEOUT)
-        raise TimeoutError("Yêu cầu quá thời gian chờ, thử lại hoặc tăng llm.timeout.") from e
+        raise TimeoutError("Request timed out, try again or chage llm.timeout.") from e
     except Exception as e:
         logger.exception("Unexpected error while generating answer")
-        raise LLMError("Đã xảy ra lỗi không mong muốn, thử lại.") from e
+        raise LLMError("Unexpected error while generating answer") from e
+
+def generate_answer(context: str, question: str) -> str:
+    _check_inputs(context, question)
+    start = time.perf_counter()
+    logger.info("Generating answer using model: %s", MODEL_NAME)
+    with _translate_errors():
+        response = _client.chat(model=MODEL_NAME,
+                                messages=build_messages(context=context, question=question),
+                                options=_options)
+        answer = response['message']['content'].strip()
+    logger.info("Answer generated in %.1fs (%d character)", time.perf_counter() - start, len(answer))
+    return answer
+
+def generate_answer_stream(context: str, question: str):
+    """Generator trả về từng đoạn văn bản khi Ollama sinh ra."""
+    _check_inputs(context, question)
+    start = time.perf_counter()
+    logger.info("Streaming answer using model: %s", MODEL_NAME)
+    total = 0
+    with _translate_errors():
+        for chunk in _client.chat(model=MODEL_NAME,
+                                  messages=build_messages(context=context, question=question),
+                                  options=_options,
+                                  stream=True):
+            piece = chunk['message']['content']
+            if piece:
+                total += len(piece)
+                yield piece
+    logger.info("Stream finished in %.1fs (%d character)", time.perf_counter() - start, total)

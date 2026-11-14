@@ -1,1 +1,7 @@
 .env
+frontend/node_modules/
+frontend/dist/
+logs/
+qdrant_storage/
+.pytest_cache/
+__pycache__/
