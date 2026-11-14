@@ -1,0 +1,3 @@
+## 2.5 Decoding  
+At test time, RAG-Sequence and RAG-Token require different ways to approximate $\arg\max_y p(y|x)$.  
+**RAG-Token** The RAG-Token model can be seen as a standard, autoregressive seq2seq generator with transition probability: $p'_\theta(y_i|x, y_{1:i-1}) = \sum_{z \in top-k(p(\cdot|x))} p_\eta(z_i|x) p_\theta(y_i|x, z_i, y_{1:i-1})$ To decode, we can plug $p'_\theta(y_i|x, y_{1:i-1})$ into a standard beam decoder.

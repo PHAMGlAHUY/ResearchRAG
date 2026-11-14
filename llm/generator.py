@@ -22,17 +22,17 @@ _options = {
     "num_ctx": _cfg.get("num_ctx", 8192),
 }
 
+class LLMError(RuntimeError):
+    """Ollama trả lỗi (ví dụ model chưa pull) hoặc lỗi không mong muốn khi sinh câu trả lời."""
+
 
 def generate_answer(context: str, question: str) -> str:
     if not context or not context.strip():
-        logger.warning("Received an empty context.")
-        return "Context data cannot be empty."
+        raise ValueError("Context data cannot be empty.")
     if not question or not question.strip():
-        logger.warning("Received an empty question.")
-        return "Question data cannot be empty."
+        raise ValueError("Question data cannot be empty.")
     if PROVIDER != "ollama":
-        logger.error("Unsupported provider: %s", PROVIDER)
-        return "Using unsupported model"
+        raise ValueError(f"Unsupported provider: {PROVIDER}")
 
     start = time.perf_counter()
     logger.info("Generating answer using model: %s", MODEL_NAME)
@@ -45,13 +45,13 @@ def generate_answer(context: str, question: str) -> str:
         return answer
     except ollama.ResponseError as e:           # ví dụ: model chưa pull (404)
         logger.error("Ollama API error: %s", e)
-        return "Ollama trả về lỗi. Kiểm tra model đã được pull chưa (ollama pull %s)." % MODEL_NAME
-    except ConnectionError as e:                # Ollama không chạy / sai base_url
+        raise LLMError(f"Ollama trả về lỗi. Kiểm tra model đã được pull chưa (ollama pull {MODEL_NAME}).") from e
+    except (ConnectionError, httpx.ConnectError) as e:   # Ollama không chạy / sai base_url
         logger.error("Cannot connect to Ollama: %s", e)
-        return "Không kết nối được tới Ollama. Kiểm tra dịch vụ đã chạy và base_url trong settings."
-    except httpx.TimeoutException:
+        raise ConnectionError("Không kết nối được tới Ollama. Kiểm tra dịch vụ đã chạy và base_url trong settings.") from e
+    except httpx.TimeoutException as e:
         logger.error("Ollama request timed out after %ss.", TIMEOUT)
-        return "Yêu cầu quá thời gian chờ, thử lại hoặc tăng llm.timeout."
-    except Exception:
+        raise TimeoutError("Yêu cầu quá thời gian chờ, thử lại hoặc tăng llm.timeout.") from e
+    except Exception as e:
         logger.exception("Unexpected error while generating answer")
-        return "Đã xảy ra lỗi không mong muốn, thử lại."
+        raise LLMError("Đã xảy ra lỗi không mong muốn, thử lại.") from e

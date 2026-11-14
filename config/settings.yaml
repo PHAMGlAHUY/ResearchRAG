@@ -20,6 +20,14 @@ embedding:
   model: intfloat/multilingual-e5-small
   batch_size: 64
   device: cpu
+  bm25_k1: 1.5                                        # mới
+  bm25_b: 0.75
+  sparse_stats_path: data/processed/bm25_stats.json   # mới
+  sparse_tokenizer:
+    stem: false
+    split_hyphen: false
+    numbers: false
+    extra_stopwords: true
 
 # Cau hinh vector database luu tru chunk + embedding
 vector_database:
@@ -46,6 +54,7 @@ llm:
 
 # Cau hinh RAG
 retrieval:
+  fusion: rrf
   top_k: 10 # so luong chunk lay ve de dung lam context cho LLM
   score_threshold: 0.0 # sau khi tinh cosine similarity thi chi lay nhung chunk co diem so tren nguong nay
   dense_weight: 0.6 # trong hybrid retriever, trong so cua dense retriever

@@ -19,7 +19,7 @@ def run_ingestion_pipeline():
 
     if raw_content:
         # Bước 2: Chunker xử lý
-        chunks = split_text_into_chunks(raw_content)
+        chunks = split_text_into_chunks(raw_content, source=input_file_path)
         print(f"--- Completed: generated {len(chunks)} chunks for embedding! ---")
 
         upsert_chunks(chunks)

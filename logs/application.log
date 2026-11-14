@@ -257,3 +257,905 @@
 [2026-11-14 10:36:11] INFO - retrieval - Retrieved 10 documents (excluded layers: none)
 [2026-11-14 10:36:11] INFO - chat - Retrieved 5 docs: [('2.4 Training', 0.865), ('2.1 Models', 0.856), ('2.1 Models', 0.856), ('4.2 Abstractive Question Answering', 0.855), ('Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', 0.853)]
 [2026-11-14 10:36:11] INFO - llm - Generating answer using model: qwen2.5:3b
+[2026-11-14 11:48:29] INFO - ingestion - Removed 23566 chars from References/Acknowledgments
+[2026-11-14 11:48:29] INFO - ingestion - Content split into 78 complete chunks.
+[2026-11-14 11:48:29] INFO - ingestion - Content split into 78 complete chunks.
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 1 to 1_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 2 to 2_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 3 to 3_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 4 to 4_1_Introduction.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 5 to 5_1_Introduction.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 6 to 6_1_Introduction.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 7 to 7_1_Introduction.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 8 to 8_1_Introduction.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 9 to 9_1_Introduction.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 10 to 10_1_Introduction.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 11 to 11_1_Introduction.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 12 to 12_2_Methods.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 13 to 13_2_Methods.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 14 to 14_21_Models.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 15 to 15_21_Models.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 16 to 16_22_Retriever_DPR.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 17 to 17_23_Generator_BART.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 18 to 18_24_Training.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 19 to 19_25_Decoding.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 20 to 20_25_Decoding.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 21 to 21_25_Decoding.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 22 to 22_3_Experiments.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 23 to 23_31_Open-domain_Question_Answering.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 24 to 24_31_Open-domain_Question_Answering.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 25 to 25_32_Abstractive_Question_Answering.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 26 to 26_33_Jeopardy_Question_Generation.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 27 to 27_33_Jeopardy_Question_Generation.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 28 to 28_34_Fact_Verification.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 29 to 29_34_Fact_Verification.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 30 to 30_41_Open-domain_Question_Answering.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 31 to 31_41_Open-domain_Question_Answering.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 32 to 32_41_Open-domain_Question_Answering.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 33 to 33_41_Open-domain_Question_Answering.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 34 to 34_42_Abstractive_Question_Answering.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 35 to 35_43_Jeopardy_Question_Generation.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 36 to 36_43_Jeopardy_Question_Generation.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 37 to 37_43_Jeopardy_Question_Generation.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 38 to 38_44_Fact_Verification.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 39 to 39_44_Fact_Verification.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 40 to 40_44_Fact_Verification.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 41 to 41_44_Fact_Verification.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 42 to 42_44_Fact_Verification.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 43 to 43_44_Fact_Verification.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 44 to 44_44_Fact_Verification.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 45 to 45_44_Fact_Verification.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 46 to 46_44_Fact_Verification.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 47 to 47_45_Additional_Results.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 48 to 48_45_Additional_Results.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 49 to 49_45_Additional_Results.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 50 to 50_45_Additional_Results.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 51 to 51_45_Additional_Results.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 52 to 52_45_Additional_Results.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 53 to 53_45_Additional_Results.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 54 to 54_45_Additional_Results.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 55 to 55_45_Additional_Results.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 56 to 56_45_Additional_Results.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 57 to 57_5_Related_Work.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 58 to 58_5_Related_Work.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 59 to 59_5_Related_Work.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 60 to 60_5_Related_Work.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 61 to 61_5_Related_Work.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 62 to 62_6_Discussion.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 63 to 63_Broader_Impact.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 64 to 64_Broader_Impact.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 65 to 65_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 66 to 66_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 67 to 67_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 68 to 68_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 69 to 69_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 70 to 70_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 71 to 71_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 72 to 72_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 73 to 73_E_Further_Details_on_FEVER.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 74 to 74_F_Null_Document_Probabilities.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 75 to 75_G_Parameters.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 76 to 76_G_Parameters.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 77 to 77_H_Retrieval_Collapse.md
+[2026-11-14 11:48:29] INFO - ingestion - Saved chunkm 78 to 78_I_Number_of_instances_per_dataset.md
+[2026-11-14 11:49:52] INFO - ingestion - Removed 23566 chars from References/Acknowledgments
+[2026-11-14 11:49:52] INFO - ingestion - Content split into 78 complete chunks.
+[2026-11-14 11:49:52] INFO - ingestion - Content split into 78 complete chunks.
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 1 to 1_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 2 to 2_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 3 to 3_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 4 to 4_1_Introduction.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 5 to 5_1_Introduction.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 6 to 6_1_Introduction.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 7 to 7_1_Introduction.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 8 to 8_1_Introduction.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 9 to 9_1_Introduction.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 10 to 10_1_Introduction.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 11 to 11_1_Introduction.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 12 to 12_2_Methods.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 13 to 13_2_Methods.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 14 to 14_21_Models.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 15 to 15_21_Models.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 16 to 16_22_Retriever_DPR.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 17 to 17_23_Generator_BART.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 18 to 18_24_Training.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 19 to 19_25_Decoding.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 20 to 20_25_Decoding.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 21 to 21_25_Decoding.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 22 to 22_3_Experiments.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 23 to 23_31_Open-domain_Question_Answering.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 24 to 24_31_Open-domain_Question_Answering.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 25 to 25_32_Abstractive_Question_Answering.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 26 to 26_33_Jeopardy_Question_Generation.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 27 to 27_33_Jeopardy_Question_Generation.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 28 to 28_34_Fact_Verification.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 29 to 29_34_Fact_Verification.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 30 to 30_41_Open-domain_Question_Answering.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 31 to 31_41_Open-domain_Question_Answering.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 32 to 32_41_Open-domain_Question_Answering.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 33 to 33_41_Open-domain_Question_Answering.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 34 to 34_42_Abstractive_Question_Answering.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 35 to 35_43_Jeopardy_Question_Generation.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 36 to 36_43_Jeopardy_Question_Generation.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 37 to 37_43_Jeopardy_Question_Generation.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 38 to 38_44_Fact_Verification.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 39 to 39_44_Fact_Verification.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 40 to 40_44_Fact_Verification.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 41 to 41_44_Fact_Verification.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 42 to 42_44_Fact_Verification.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 43 to 43_44_Fact_Verification.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 44 to 44_44_Fact_Verification.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 45 to 45_44_Fact_Verification.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 46 to 46_44_Fact_Verification.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 47 to 47_45_Additional_Results.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 48 to 48_45_Additional_Results.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 49 to 49_45_Additional_Results.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 50 to 50_45_Additional_Results.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 51 to 51_45_Additional_Results.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 52 to 52_45_Additional_Results.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 53 to 53_45_Additional_Results.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 54 to 54_45_Additional_Results.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 55 to 55_45_Additional_Results.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 56 to 56_45_Additional_Results.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 57 to 57_5_Related_Work.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 58 to 58_5_Related_Work.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 59 to 59_5_Related_Work.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 60 to 60_5_Related_Work.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 61 to 61_5_Related_Work.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 62 to 62_6_Discussion.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 63 to 63_Broader_Impact.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 64 to 64_Broader_Impact.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 65 to 65_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 66 to 66_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 67 to 67_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 68 to 68_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 69 to 69_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 70 to 70_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 71 to 71_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 72 to 72_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 73 to 73_E_Further_Details_on_FEVER.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 74 to 74_F_Null_Document_Probabilities.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 75 to 75_G_Parameters.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 76 to 76_G_Parameters.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 77 to 77_H_Retrieval_Collapse.md
+[2026-11-14 11:49:52] INFO - ingestion - Saved chunkm 78 to 78_I_Number_of_instances_per_dataset.md
+[2026-11-14 11:53:04] INFO - ingestion - Removed 23566 chars from References/Acknowledgments
+[2026-11-14 11:53:04] INFO - ingestion - Content split into 69 complete chunks.
+[2026-11-14 11:53:04] INFO - ingestion - Content split into 69 complete chunks.
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 1 to 1_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 2 to 2_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 3 to 3_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 4 to 4_1_Introduction.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 5 to 5_1_Introduction.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 6 to 6_1_Introduction.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 7 to 7_1_Introduction.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 8 to 8_1_Introduction.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 9 to 9_1_Introduction.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 10 to 10_1_Introduction.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 11 to 11_1_Introduction.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 12 to 12_2_Methods.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 13 to 13_2_Methods.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 14 to 14_21_Models.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 15 to 15_21_Models.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 16 to 16_22_Retriever_DPR.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 17 to 17_23_Generator_BART.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 18 to 18_24_Training.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 19 to 19_25_Decoding.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 20 to 20_25_Decoding.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 21 to 21_25_Decoding.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 22 to 22_3_Experiments.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 23 to 23_31_Open-domain_Question_Answering.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 24 to 24_31_Open-domain_Question_Answering.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 25 to 25_32_Abstractive_Question_Answering.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 26 to 26_33_Jeopardy_Question_Generation.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 27 to 27_33_Jeopardy_Question_Generation.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 28 to 28_34_Fact_Verification.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 29 to 29_34_Fact_Verification.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 30 to 30_41_Open-domain_Question_Answering.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 31 to 31_41_Open-domain_Question_Answering.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 32 to 32_41_Open-domain_Question_Answering.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 33 to 33_42_Abstractive_Question_Answering.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 34 to 34_43_Jeopardy_Question_Generation.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 35 to 35_43_Jeopardy_Question_Generation.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 36 to 36_43_Jeopardy_Question_Generation.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 37 to 37_44_Fact_Verification.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 38 to 38_44_Fact_Verification.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 39 to 39_44_Fact_Verification.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 40 to 40_44_Fact_Verification.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 41 to 41_44_Fact_Verification.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 42 to 42_45_Additional_Results.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 43 to 43_45_Additional_Results.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 44 to 44_45_Additional_Results.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 45 to 45_45_Additional_Results.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 46 to 46_45_Additional_Results.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 47 to 47_45_Additional_Results.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 48 to 48_5_Related_Work.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 49 to 49_5_Related_Work.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 50 to 50_5_Related_Work.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 51 to 51_5_Related_Work.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 52 to 52_5_Related_Work.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 53 to 53_6_Discussion.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 54 to 54_Broader_Impact.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 55 to 55_Broader_Impact.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 56 to 56_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 57 to 57_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 58 to 58_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 59 to 59_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 60 to 60_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 61 to 61_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 62 to 62_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 63 to 63_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 64 to 64_E_Further_Details_on_FEVER.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 65 to 65_F_Null_Document_Probabilities.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 66 to 66_G_Parameters.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 67 to 67_G_Parameters.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 68 to 68_H_Retrieval_Collapse.md
+[2026-11-14 11:53:04] INFO - ingestion - Saved chunkm 69 to 69_I_Number_of_instances_per_dataset.md
+[2026-11-14 11:55:46] INFO - ingestion - Removed 23566 chars from References/Acknowledgments
+[2026-11-14 11:55:46] INFO - ingestion - Content split into 69 complete chunks.
+[2026-11-14 11:55:46] INFO - ingestion - Content split into 69 complete chunks.
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 1 to 1_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 2 to 2_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 3 to 3_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 4 to 4_1_Introduction.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 5 to 5_1_Introduction.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 6 to 6_1_Introduction.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 7 to 7_1_Introduction.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 8 to 8_1_Introduction.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 9 to 9_1_Introduction.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 10 to 10_1_Introduction.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 11 to 11_1_Introduction.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 12 to 12_2_Methods.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 13 to 13_2_Methods.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 14 to 14_21_Models.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 15 to 15_21_Models.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 16 to 16_22_Retriever_DPR.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 17 to 17_23_Generator_BART.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 18 to 18_24_Training.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 19 to 19_25_Decoding.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 20 to 20_25_Decoding.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 21 to 21_25_Decoding.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 22 to 22_3_Experiments.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 23 to 23_31_Open-domain_Question_Answering.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 24 to 24_31_Open-domain_Question_Answering.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 25 to 25_32_Abstractive_Question_Answering.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 26 to 26_33_Jeopardy_Question_Generation.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 27 to 27_33_Jeopardy_Question_Generation.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 28 to 28_34_Fact_Verification.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 29 to 29_34_Fact_Verification.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 30 to 30_41_Open-domain_Question_Answering.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 31 to 31_41_Open-domain_Question_Answering.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 32 to 32_41_Open-domain_Question_Answering.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 33 to 33_42_Abstractive_Question_Answering.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 34 to 34_43_Jeopardy_Question_Generation.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 35 to 35_43_Jeopardy_Question_Generation.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 36 to 36_43_Jeopardy_Question_Generation.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 37 to 37_44_Fact_Verification.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 38 to 38_44_Fact_Verification.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 39 to 39_44_Fact_Verification.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 40 to 40_44_Fact_Verification.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 41 to 41_44_Fact_Verification.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 42 to 42_45_Additional_Results.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 43 to 43_45_Additional_Results.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 44 to 44_45_Additional_Results.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 45 to 45_45_Additional_Results.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 46 to 46_45_Additional_Results.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 47 to 47_45_Additional_Results.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 48 to 48_5_Related_Work.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 49 to 49_5_Related_Work.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 50 to 50_5_Related_Work.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 51 to 51_5_Related_Work.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 52 to 52_5_Related_Work.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 53 to 53_6_Discussion.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 54 to 54_Broader_Impact.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 55 to 55_Broader_Impact.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 56 to 56_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 57 to 57_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 58 to 58_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 59 to 59_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 60 to 60_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 61 to 61_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 62 to 62_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 63 to 63_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 64 to 64_E_Further_Details_on_FEVER.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 65 to 65_F_Null_Document_Probabilities.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 66 to 66_G_Parameters.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 67 to 67_G_Parameters.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 68 to 68_H_Retrieval_Collapse.md
+[2026-11-14 11:55:46] INFO - ingestion - Saved chunkm 69 to 69_I_Number_of_instances_per_dataset.md
+[2026-11-14 11:55:46] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small.
+[2026-11-14 11:56:01] INFO - embedding - Completed embedding 69 texts.
+[2026-11-14 11:56:01] INFO - vector_database - Built 69 Qdrant points.
+[2026-11-14 11:56:01] INFO - vector_database - Connecting to Qdrant via url
+[2026-11-14 11:56:02] INFO - vector_database - Successfully connected to Qdrant
+[2026-11-14 11:56:02] INFO - vector_database - Creating collection nmk_chatbot_collection ...
+[2026-11-14 11:56:04] INFO - vector_database - Collection nmk_chatbot_collection created successfully
+[2026-11-14 11:56:04] INFO - vector_database - Deleted old points of source 2005.11401v4.md.
+[2026-11-14 11:56:05] INFO - vector_database - Upserted 69 points into collection nmk_chatbot_collection
+[2026-11-14 11:56:05] INFO - ingestion - --- All chunks have been upserted to vector store ---
+[2026-11-14 12:39:37] INFO - ingestion - Removed 23566 chars from References/Acknowledgments
+[2026-11-14 12:39:37] INFO - ingestion - Content split into 69 complete chunks.
+[2026-11-14 12:39:37] INFO - ingestion - Content split into 69 complete chunks.
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 1 to 1_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 2 to 2_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 3 to 3_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 4 to 4_1_Introduction.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 5 to 5_1_Introduction.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 6 to 6_1_Introduction.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 7 to 7_1_Introduction.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 8 to 8_1_Introduction.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 9 to 9_1_Introduction.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 10 to 10_1_Introduction.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 11 to 11_1_Introduction.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 12 to 12_2_Methods.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 13 to 13_2_Methods.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 14 to 14_21_Models.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 15 to 15_21_Models.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 16 to 16_22_Retriever_DPR.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 17 to 17_23_Generator_BART.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 18 to 18_24_Training.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 19 to 19_25_Decoding.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 20 to 20_25_Decoding.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 21 to 21_25_Decoding.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 22 to 22_3_Experiments.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 23 to 23_31_Open-domain_Question_Answering.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 24 to 24_31_Open-domain_Question_Answering.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 25 to 25_32_Abstractive_Question_Answering.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 26 to 26_33_Jeopardy_Question_Generation.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 27 to 27_33_Jeopardy_Question_Generation.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 28 to 28_34_Fact_Verification.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 29 to 29_34_Fact_Verification.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 30 to 30_41_Open-domain_Question_Answering.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 31 to 31_41_Open-domain_Question_Answering.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 32 to 32_41_Open-domain_Question_Answering.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 33 to 33_42_Abstractive_Question_Answering.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 34 to 34_43_Jeopardy_Question_Generation.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 35 to 35_43_Jeopardy_Question_Generation.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 36 to 36_43_Jeopardy_Question_Generation.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 37 to 37_44_Fact_Verification.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 38 to 38_44_Fact_Verification.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 39 to 39_44_Fact_Verification.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 40 to 40_44_Fact_Verification.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 41 to 41_44_Fact_Verification.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 42 to 42_45_Additional_Results.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 43 to 43_45_Additional_Results.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 44 to 44_45_Additional_Results.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 45 to 45_45_Additional_Results.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 46 to 46_45_Additional_Results.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 47 to 47_45_Additional_Results.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 48 to 48_5_Related_Work.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 49 to 49_5_Related_Work.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 50 to 50_5_Related_Work.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 51 to 51_5_Related_Work.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 52 to 52_5_Related_Work.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 53 to 53_6_Discussion.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 54 to 54_Broader_Impact.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 55 to 55_Broader_Impact.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 56 to 56_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 57 to 57_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 58 to 58_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 59 to 59_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 60 to 60_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 61 to 61_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 62 to 62_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 63 to 63_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 64 to 64_E_Further_Details_on_FEVER.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 65 to 65_F_Null_Document_Probabilities.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 66 to 66_G_Parameters.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 67 to 67_G_Parameters.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 68 to 68_H_Retrieval_Collapse.md
+[2026-11-14 12:39:37] INFO - ingestion - Saved chunkm 69 to 69_I_Number_of_instances_per_dataset.md
+[2026-11-14 12:39:37] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 12:39:51] INFO - embedding - Completed embedding 69 texts.
+[2026-11-14 12:39:51] INFO - vector_database - Built 69 Qdrant points.
+[2026-11-14 12:39:51] INFO - vector_database - Connecting to Qdrant via url
+[2026-11-14 12:39:52] INFO - vector_database - Successfully connected to Qdrant
+[2026-11-14 12:39:52] INFO - vector_database - Collection nmk_chatbot_collection already exists
+[2026-11-14 12:39:52] INFO - vector_database - Deleted old points of source 2005.11401v4.md.
+[2026-11-14 12:39:52] INFO - vector_database - Upserted 69 points into collection nmk_chatbot_collection
+[2026-11-14 12:39:52] INFO - ingestion - --- All chunks have been upserted to vector store ---
+[2026-11-14 17:45:39] INFO - ingestion - Removed 23566 chars from References/Acknowledgments
+[2026-11-14 17:45:39] INFO - ingestion - Content split into 69 complete chunks.
+[2026-11-14 17:45:39] INFO - ingestion - Content split into 69 complete chunks.
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 1 to 1_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 2 to 2_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 3 to 3_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 4 to 4_1_Introduction.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 5 to 5_1_Introduction.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 6 to 6_1_Introduction.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 7 to 7_1_Introduction.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 8 to 8_1_Introduction.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 9 to 9_1_Introduction.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 10 to 10_1_Introduction.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 11 to 11_1_Introduction.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 12 to 12_2_Methods.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 13 to 13_2_Methods.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 14 to 14_21_Models.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 15 to 15_21_Models.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 16 to 16_22_Retriever_DPR.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 17 to 17_23_Generator_BART.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 18 to 18_24_Training.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 19 to 19_25_Decoding.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 20 to 20_25_Decoding.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 21 to 21_25_Decoding.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 22 to 22_3_Experiments.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 23 to 23_31_Open-domain_Question_Answering.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 24 to 24_31_Open-domain_Question_Answering.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 25 to 25_32_Abstractive_Question_Answering.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 26 to 26_33_Jeopardy_Question_Generation.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 27 to 27_33_Jeopardy_Question_Generation.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 28 to 28_34_Fact_Verification.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 29 to 29_34_Fact_Verification.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 30 to 30_41_Open-domain_Question_Answering.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 31 to 31_41_Open-domain_Question_Answering.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 32 to 32_41_Open-domain_Question_Answering.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 33 to 33_42_Abstractive_Question_Answering.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 34 to 34_43_Jeopardy_Question_Generation.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 35 to 35_43_Jeopardy_Question_Generation.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 36 to 36_43_Jeopardy_Question_Generation.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 37 to 37_44_Fact_Verification.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 38 to 38_44_Fact_Verification.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 39 to 39_44_Fact_Verification.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 40 to 40_44_Fact_Verification.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 41 to 41_44_Fact_Verification.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 42 to 42_45_Additional_Results.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 43 to 43_45_Additional_Results.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 44 to 44_45_Additional_Results.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 45 to 45_45_Additional_Results.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 46 to 46_45_Additional_Results.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 47 to 47_45_Additional_Results.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 48 to 48_5_Related_Work.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 49 to 49_5_Related_Work.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 50 to 50_5_Related_Work.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 51 to 51_5_Related_Work.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 52 to 52_5_Related_Work.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 53 to 53_6_Discussion.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 54 to 54_Broader_Impact.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 55 to 55_Broader_Impact.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 56 to 56_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 57 to 57_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 58 to 58_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 59 to 59_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 60 to 60_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 61 to 61_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 62 to 62_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 63 to 63_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 64 to 64_E_Further_Details_on_FEVER.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 65 to 65_F_Null_Document_Probabilities.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 66 to 66_G_Parameters.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 67 to 67_G_Parameters.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 68 to 68_H_Retrieval_Collapse.md
+[2026-11-14 17:45:39] INFO - ingestion - Saved chunkm 69 to 69_I_Number_of_instances_per_dataset.md
+[2026-11-14 17:45:39] INFO - embedding - Fitted sparse embedder: 69 docs, 1474 terms, avgdl=74.8
+[2026-11-14 17:47:11] INFO - ingestion - Removed 23566 chars from References/Acknowledgments
+[2026-11-14 17:47:11] INFO - ingestion - Content split into 69 complete chunks.
+[2026-11-14 17:47:11] INFO - ingestion - Content split into 69 complete chunks.
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 1 to 1_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 2 to 2_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 3 to 3_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 4 to 4_1_Introduction.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 5 to 5_1_Introduction.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 6 to 6_1_Introduction.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 7 to 7_1_Introduction.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 8 to 8_1_Introduction.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 9 to 9_1_Introduction.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 10 to 10_1_Introduction.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 11 to 11_1_Introduction.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 12 to 12_2_Methods.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 13 to 13_2_Methods.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 14 to 14_21_Models.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 15 to 15_21_Models.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 16 to 16_22_Retriever_DPR.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 17 to 17_23_Generator_BART.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 18 to 18_24_Training.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 19 to 19_25_Decoding.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 20 to 20_25_Decoding.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 21 to 21_25_Decoding.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 22 to 22_3_Experiments.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 23 to 23_31_Open-domain_Question_Answering.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 24 to 24_31_Open-domain_Question_Answering.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 25 to 25_32_Abstractive_Question_Answering.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 26 to 26_33_Jeopardy_Question_Generation.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 27 to 27_33_Jeopardy_Question_Generation.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 28 to 28_34_Fact_Verification.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 29 to 29_34_Fact_Verification.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 30 to 30_41_Open-domain_Question_Answering.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 31 to 31_41_Open-domain_Question_Answering.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 32 to 32_41_Open-domain_Question_Answering.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 33 to 33_42_Abstractive_Question_Answering.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 34 to 34_43_Jeopardy_Question_Generation.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 35 to 35_43_Jeopardy_Question_Generation.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 36 to 36_43_Jeopardy_Question_Generation.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 37 to 37_44_Fact_Verification.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 38 to 38_44_Fact_Verification.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 39 to 39_44_Fact_Verification.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 40 to 40_44_Fact_Verification.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 41 to 41_44_Fact_Verification.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 42 to 42_45_Additional_Results.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 43 to 43_45_Additional_Results.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 44 to 44_45_Additional_Results.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 45 to 45_45_Additional_Results.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 46 to 46_45_Additional_Results.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 47 to 47_45_Additional_Results.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 48 to 48_5_Related_Work.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 49 to 49_5_Related_Work.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 50 to 50_5_Related_Work.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 51 to 51_5_Related_Work.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 52 to 52_5_Related_Work.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 53 to 53_6_Discussion.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 54 to 54_Broader_Impact.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 55 to 55_Broader_Impact.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 56 to 56_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 57 to 57_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 58 to 58_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 59 to 59_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 60 to 60_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 61 to 61_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 62 to 62_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 63 to 63_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 64 to 64_E_Further_Details_on_FEVER.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 65 to 65_F_Null_Document_Probabilities.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 66 to 66_G_Parameters.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 67 to 67_G_Parameters.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 68 to 68_H_Retrieval_Collapse.md
+[2026-11-14 17:47:11] INFO - ingestion - Saved chunkm 69 to 69_I_Number_of_instances_per_dataset.md
+[2026-11-14 17:47:11] INFO - embedding - Fitted sparse embedder: 69 docs, 1474 terms, avgdl=74.8
+[2026-11-14 17:47:11] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 17:47:26] INFO - embedding - Completed embedding 69 texts.
+[2026-11-14 17:47:26] INFO - vector_database - Built 69 Qdrant points.
+[2026-11-14 17:47:26] INFO - vector_database - Connecting to Qdrant via url
+[2026-11-14 17:47:27] INFO - vector_database - Successfully connected to Qdrant
+[2026-11-14 17:47:27] INFO - vector_database - Collection nmk_chatbot_collection already exists
+[2026-11-14 17:47:27] INFO - vector_database - Deleted old points of source 2005.11401v4.md.
+[2026-11-14 17:48:55] INFO - ingestion - Removed 23566 chars from References/Acknowledgments
+[2026-11-14 17:48:55] INFO - ingestion - Content split into 69 complete chunks.
+[2026-11-14 17:48:55] INFO - ingestion - Content split into 69 complete chunks.
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 1 to 1_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 2 to 2_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 3 to 3_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 4 to 4_1_Introduction.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 5 to 5_1_Introduction.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 6 to 6_1_Introduction.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 7 to 7_1_Introduction.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 8 to 8_1_Introduction.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 9 to 9_1_Introduction.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 10 to 10_1_Introduction.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 11 to 11_1_Introduction.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 12 to 12_2_Methods.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 13 to 13_2_Methods.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 14 to 14_21_Models.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 15 to 15_21_Models.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 16 to 16_22_Retriever_DPR.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 17 to 17_23_Generator_BART.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 18 to 18_24_Training.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 19 to 19_25_Decoding.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 20 to 20_25_Decoding.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 21 to 21_25_Decoding.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 22 to 22_3_Experiments.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 23 to 23_31_Open-domain_Question_Answering.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 24 to 24_31_Open-domain_Question_Answering.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 25 to 25_32_Abstractive_Question_Answering.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 26 to 26_33_Jeopardy_Question_Generation.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 27 to 27_33_Jeopardy_Question_Generation.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 28 to 28_34_Fact_Verification.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 29 to 29_34_Fact_Verification.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 30 to 30_41_Open-domain_Question_Answering.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 31 to 31_41_Open-domain_Question_Answering.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 32 to 32_41_Open-domain_Question_Answering.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 33 to 33_42_Abstractive_Question_Answering.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 34 to 34_43_Jeopardy_Question_Generation.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 35 to 35_43_Jeopardy_Question_Generation.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 36 to 36_43_Jeopardy_Question_Generation.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 37 to 37_44_Fact_Verification.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 38 to 38_44_Fact_Verification.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 39 to 39_44_Fact_Verification.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 40 to 40_44_Fact_Verification.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 41 to 41_44_Fact_Verification.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 42 to 42_45_Additional_Results.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 43 to 43_45_Additional_Results.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 44 to 44_45_Additional_Results.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 45 to 45_45_Additional_Results.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 46 to 46_45_Additional_Results.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 47 to 47_45_Additional_Results.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 48 to 48_5_Related_Work.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 49 to 49_5_Related_Work.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 50 to 50_5_Related_Work.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 51 to 51_5_Related_Work.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 52 to 52_5_Related_Work.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 53 to 53_6_Discussion.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 54 to 54_Broader_Impact.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 55 to 55_Broader_Impact.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 56 to 56_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 57 to 57_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 58 to 58_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 59 to 59_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 60 to 60_Appendices_for_Retrieval-Augmented_Gener.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 61 to 61_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 62 to 62_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 63 to 63_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 64 to 64_E_Further_Details_on_FEVER.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 65 to 65_F_Null_Document_Probabilities.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 66 to 66_G_Parameters.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 67 to 67_G_Parameters.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 68 to 68_H_Retrieval_Collapse.md
+[2026-11-14 17:48:55] INFO - ingestion - Saved chunkm 69 to 69_I_Number_of_instances_per_dataset.md
+[2026-11-14 17:48:55] INFO - embedding - Fitted sparse embedder: 69 docs, 1474 terms, avgdl=74.8
+[2026-11-14 17:48:55] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 17:49:09] INFO - embedding - Completed embedding 69 texts.
+[2026-11-14 17:49:09] INFO - vector_database - Built 69 Qdrant points.
+[2026-11-14 17:49:09] INFO - vector_database - Connecting to Qdrant via url
+[2026-11-14 17:49:09] INFO - vector_database - Successfully connected to Qdrant
+[2026-11-14 17:49:09] INFO - vector_database - Creating collection nmk_chatbot_collection ...
+[2026-11-14 17:49:12] INFO - vector_database - Collection nmk_chatbot_collection created successfully
+[2026-11-14 17:49:12] INFO - vector_database - Deleted old points of source 2005.11401v4.md.
+[2026-11-14 17:49:12] INFO - vector_database - Upserted 69 points into collection nmk_chatbot_collection
+[2026-11-14 17:49:12] INFO - ingestion - --- All chunks have been upserted to vector store ---
+[2026-11-14 18:07:53] INFO - chat - Starting retrieval for the question: What is MIPS
+[2026-11-14 18:07:53] INFO - vector_database - Connecting to Qdrant via url
+[2026-11-14 18:07:53] INFO - vector_database - Successfully connected to Qdrant
+[2026-11-14 18:07:53] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 18:07:59] INFO - retrieval - Retrieved 10 documents
+[2026-11-14 18:07:59] INFO - chat - Retrieved 5 docs: [('1 Introduction', 0.7), ('1 Introduction', 0.7), ('3 Experiments', 0.5), ('2.2 Retriever: DPR', 0.458), ('2.4 Training', 0.333)]
+[2026-11-14 18:07:59] INFO - llm - Generating answer using model: qwen2.5:3b
+[2026-11-14 18:09:03] INFO - chat - Starting retrieval for the question: What is BM25?
+[2026-11-14 18:09:03] INFO - retrieval - Retrieved 10 documents
+[2026-11-14 18:09:03] INFO - chat - Retrieved 5 docs: [('4.5 Additional Results', 1.0), ('4.5 Additional Results', 0.35), ('4.5 Additional Results', 0.333), ('2.4 Training', 0.333), ('4.4 Fact Verification', 0.25)]
+[2026-11-14 18:09:03] INFO - llm - Generating answer using model: qwen2.5:3b
+[2026-11-14 18:09:46] INFO - chat - Starting retrieval for the question: What is dense?
+[2026-11-14 18:09:46] INFO - retrieval - Retrieved 10 documents
+[2026-11-14 18:09:46] INFO - chat - Retrieved 5 docs: [('1 Introduction', 0.833), ('4.5 Additional Results', 0.611), ('2.4 Training', 0.333), ('Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', 0.31), ('4.4 Fact Verification', 0.309)]
+[2026-11-14 18:09:46] INFO - llm - Generating answer using model: qwen2.5:3b
+[2026-11-14 18:10:40] INFO - chat - Starting retrieval for the question: What is retriever ?
+[2026-11-14 18:10:40] INFO - retrieval - Retrieved 10 documents
+[2026-11-14 18:10:40] INFO - chat - Retrieved 5 docs: [('2.4 Training', 0.577), ('1 Introduction', 0.5), ('2.2 Retriever: DPR', 0.45), ('4.4 Fact Verification', 0.333), ('*Appendices for* Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks', 0.333)]
+[2026-11-14 18:10:40] INFO - llm - Generating answer using model: qwen2.5:3b
+[2026-11-14 18:11:22] INFO - chat - Starting retrieval for the question: What is qdrant ?
+[2026-11-14 18:11:22] INFO - retrieval - Retrieved 10 documents
+[2026-11-14 18:11:22] INFO - chat - Retrieved 5 docs: [('1 Introduction', 0.5), ('2.4 Training', 0.5), ('**D Further Details on Open-Domain QA**', 0.333), ('4.4 Fact Verification', 0.333), ('2.2 Retriever: DPR', 0.25)]
+[2026-11-14 18:11:22] INFO - llm - Generating answer using model: qwen2.5:3b
+[2026-11-14 18:25:13] INFO - ingestion - Removed 23558 chars from References/Acknowledgments
+[2026-11-14 18:25:13] INFO - ingestion - Content split into 69 complete chunks.
+[2026-11-14 18:25:13] INFO - ingestion - Content split into 69 complete chunks.
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 1 to 1_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 2 to 2_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 3 to 3_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 4 to 4_1_Introduction.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 5 to 5_1_Introduction.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 6 to 6_1_Introduction.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 7 to 7_1_Introduction.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 8 to 8_1_Introduction.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 9 to 9_1_Introduction.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 10 to 10_1_Introduction.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 11 to 11_1_Introduction.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 12 to 12_2_Methods.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 13 to 13_2_Methods.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 14 to 14_21_Models.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 15 to 15_21_Models.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 16 to 16_22_Retriever_DPR.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 17 to 17_23_Generator_BART.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 18 to 18_24_Training.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 19 to 19_25_Decoding.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 20 to 20_25_Decoding.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 21 to 21_25_Decoding.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 22 to 22_3_Experiments.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 23 to 23_31_Open-domain_Question_Answering.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 24 to 24_31_Open-domain_Question_Answering.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 25 to 25_32_Abstractive_Question_Answering.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 26 to 26_33_Jeopardy_Question_Generation.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 27 to 27_33_Jeopardy_Question_Generation.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 28 to 28_34_Fact_Verification.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 29 to 29_34_Fact_Verification.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 30 to 30_41_Open-domain_Question_Answering.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 31 to 31_41_Open-domain_Question_Answering.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 32 to 32_41_Open-domain_Question_Answering.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 33 to 33_42_Abstractive_Question_Answering.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 34 to 34_43_Jeopardy_Question_Generation.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 35 to 35_43_Jeopardy_Question_Generation.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 36 to 36_43_Jeopardy_Question_Generation.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 37 to 37_44_Fact_Verification.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 38 to 38_44_Fact_Verification.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 39 to 39_44_Fact_Verification.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 40 to 40_44_Fact_Verification.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 41 to 41_44_Fact_Verification.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 42 to 42_45_Additional_Results.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 43 to 43_45_Additional_Results.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 44 to 44_45_Additional_Results.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 45 to 45_45_Additional_Results.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 46 to 46_45_Additional_Results.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 47 to 47_45_Additional_Results.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 48 to 48_5_Related_Work.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 49 to 49_5_Related_Work.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 50 to 50_5_Related_Work.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 51 to 51_5_Related_Work.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 52 to 52_5_Related_Work.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 53 to 53_6_Discussion.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 54 to 54_Broader_Impact.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 55 to 55_Broader_Impact.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 56 to 56_A_Implementation_Details.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 57 to 57_B_Human_Evaluation.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 58 to 58_C_Training_setup_Details.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 59 to 59_C_Training_setup_Details.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 60 to 60_C_Training_setup_Details.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 61 to 61_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 62 to 62_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 63 to 63_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 64 to 64_E_Further_Details_on_FEVER.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 65 to 65_F_Null_Document_Probabilities.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 66 to 66_G_Parameters.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 67 to 67_G_Parameters.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 68 to 68_H_Retrieval_Collapse.md
+[2026-11-14 18:25:13] INFO - ingestion - Saved chunkm 69 to 69_I_Number_of_instances_per_dataset.md
+[2026-11-14 18:25:13] INFO - embedding - Fitted sparse embedder: 69 docs, 1453 terms, avgdl=73.3
+[2026-11-14 18:25:13] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 18:25:26] INFO - embedding - Completed embedding 69 texts.
+[2026-11-14 18:25:26] INFO - vector_database - Built 69 Qdrant points.
+[2026-11-14 18:25:26] INFO - vector_database - Connecting to Qdrant via url
+[2026-11-14 18:25:27] INFO - vector_database - Successfully connected to Qdrant
+[2026-11-14 18:25:27] INFO - vector_database - Collection nmk_chatbot_collection already exists
+[2026-11-14 18:25:27] INFO - vector_database - Deleted old points of source 2005.11401v4.md.
+[2026-11-14 18:25:27] INFO - vector_database - Upserted 69 points into collection nmk_chatbot_collection
+[2026-11-14 18:25:27] INFO - ingestion - --- All chunks have been upserted to vector store ---
+[2026-11-14 18:25:59] INFO - ingestion - Removed 23558 chars from References/Acknowledgments
+[2026-11-14 18:25:59] INFO - ingestion - Content split into 69 complete chunks.
+[2026-11-14 18:25:59] INFO - ingestion - Content split into 69 complete chunks.
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 1 to 1_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 2 to 2_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 3 to 3_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 4 to 4_1_Introduction.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 5 to 5_1_Introduction.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 6 to 6_1_Introduction.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 7 to 7_1_Introduction.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 8 to 8_1_Introduction.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 9 to 9_1_Introduction.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 10 to 10_1_Introduction.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 11 to 11_1_Introduction.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 12 to 12_2_Methods.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 13 to 13_2_Methods.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 14 to 14_21_Models.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 15 to 15_21_Models.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 16 to 16_22_Retriever_DPR.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 17 to 17_23_Generator_BART.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 18 to 18_24_Training.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 19 to 19_25_Decoding.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 20 to 20_25_Decoding.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 21 to 21_25_Decoding.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 22 to 22_3_Experiments.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 23 to 23_31_Open-domain_Question_Answering.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 24 to 24_31_Open-domain_Question_Answering.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 25 to 25_32_Abstractive_Question_Answering.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 26 to 26_33_Jeopardy_Question_Generation.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 27 to 27_33_Jeopardy_Question_Generation.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 28 to 28_34_Fact_Verification.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 29 to 29_34_Fact_Verification.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 30 to 30_41_Open-domain_Question_Answering.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 31 to 31_41_Open-domain_Question_Answering.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 32 to 32_41_Open-domain_Question_Answering.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 33 to 33_42_Abstractive_Question_Answering.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 34 to 34_43_Jeopardy_Question_Generation.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 35 to 35_43_Jeopardy_Question_Generation.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 36 to 36_43_Jeopardy_Question_Generation.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 37 to 37_44_Fact_Verification.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 38 to 38_44_Fact_Verification.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 39 to 39_44_Fact_Verification.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 40 to 40_44_Fact_Verification.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 41 to 41_44_Fact_Verification.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 42 to 42_45_Additional_Results.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 43 to 43_45_Additional_Results.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 44 to 44_45_Additional_Results.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 45 to 45_45_Additional_Results.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 46 to 46_45_Additional_Results.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 47 to 47_45_Additional_Results.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 48 to 48_5_Related_Work.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 49 to 49_5_Related_Work.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 50 to 50_5_Related_Work.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 51 to 51_5_Related_Work.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 52 to 52_5_Related_Work.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 53 to 53_6_Discussion.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 54 to 54_Broader_Impact.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 55 to 55_Broader_Impact.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 56 to 56_A_Implementation_Details.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 57 to 57_B_Human_Evaluation.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 58 to 58_C_Training_setup_Details.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 59 to 59_C_Training_setup_Details.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 60 to 60_C_Training_setup_Details.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 61 to 61_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 62 to 62_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 63 to 63_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 64 to 64_E_Further_Details_on_FEVER.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 65 to 65_F_Null_Document_Probabilities.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 66 to 66_G_Parameters.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 67 to 67_G_Parameters.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 68 to 68_H_Retrieval_Collapse.md
+[2026-11-14 18:25:59] INFO - ingestion - Saved chunkm 69 to 69_I_Number_of_instances_per_dataset.md
+[2026-11-14 18:25:59] INFO - embedding - Fitted sparse embedder: 69 docs, 1453 terms, avgdl=73.3
+[2026-11-14 18:25:59] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 18:26:10] INFO - embedding - Completed embedding 69 texts.
+[2026-11-14 18:26:10] INFO - vector_database - Built 69 Qdrant points.
+[2026-11-14 18:26:10] INFO - vector_database - Connecting to Qdrant via url
+[2026-11-14 18:26:10] INFO - vector_database - Successfully connected to Qdrant
+[2026-11-14 18:26:10] INFO - vector_database - Collection nmk_chatbot_collection already exists
+[2026-11-14 18:26:10] INFO - vector_database - Deleted old points of source 2005.11401v4.md.
+[2026-11-14 18:26:11] INFO - vector_database - Upserted 69 points into collection nmk_chatbot_collection
+[2026-11-14 18:26:11] INFO - ingestion - --- All chunks have been upserted to vector store ---
+[2026-11-14 18:43:10] INFO - ingestion - Removed 23558 chars from References/Acknowledgments
+[2026-11-14 18:43:10] INFO - ingestion - Content split into 69 complete chunks.
+[2026-11-14 18:43:10] INFO - ingestion - Content split into 69 complete chunks.
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 1 to 1_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 2 to 2_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 3 to 3_Retrieval-Augmented_Generation_for_Knowl.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 4 to 4_1_Introduction.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 5 to 5_1_Introduction.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 6 to 6_1_Introduction.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 7 to 7_1_Introduction.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 8 to 8_1_Introduction.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 9 to 9_1_Introduction.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 10 to 10_1_Introduction.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 11 to 11_1_Introduction.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 12 to 12_2_Methods.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 13 to 13_2_Methods.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 14 to 14_21_Models.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 15 to 15_21_Models.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 16 to 16_22_Retriever_DPR.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 17 to 17_23_Generator_BART.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 18 to 18_24_Training.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 19 to 19_25_Decoding.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 20 to 20_25_Decoding.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 21 to 21_25_Decoding.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 22 to 22_3_Experiments.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 23 to 23_31_Open-domain_Question_Answering.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 24 to 24_31_Open-domain_Question_Answering.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 25 to 25_32_Abstractive_Question_Answering.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 26 to 26_33_Jeopardy_Question_Generation.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 27 to 27_33_Jeopardy_Question_Generation.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 28 to 28_34_Fact_Verification.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 29 to 29_34_Fact_Verification.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 30 to 30_41_Open-domain_Question_Answering.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 31 to 31_41_Open-domain_Question_Answering.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 32 to 32_41_Open-domain_Question_Answering.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 33 to 33_42_Abstractive_Question_Answering.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 34 to 34_43_Jeopardy_Question_Generation.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 35 to 35_43_Jeopardy_Question_Generation.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 36 to 36_43_Jeopardy_Question_Generation.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 37 to 37_44_Fact_Verification.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 38 to 38_44_Fact_Verification.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 39 to 39_44_Fact_Verification.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 40 to 40_44_Fact_Verification.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 41 to 41_44_Fact_Verification.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 42 to 42_45_Additional_Results.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 43 to 43_45_Additional_Results.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 44 to 44_45_Additional_Results.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 45 to 45_45_Additional_Results.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 46 to 46_45_Additional_Results.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 47 to 47_45_Additional_Results.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 48 to 48_5_Related_Work.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 49 to 49_5_Related_Work.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 50 to 50_5_Related_Work.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 51 to 51_5_Related_Work.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 52 to 52_5_Related_Work.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 53 to 53_6_Discussion.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 54 to 54_Broader_Impact.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 55 to 55_Broader_Impact.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 56 to 56_A_Implementation_Details.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 57 to 57_B_Human_Evaluation.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 58 to 58_C_Training_setup_Details.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 59 to 59_C_Training_setup_Details.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 60 to 60_C_Training_setup_Details.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 61 to 61_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 62 to 62_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 63 to 63_D_Further_Details_on_Open-Domain_QA.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 64 to 64_E_Further_Details_on_FEVER.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 65 to 65_F_Null_Document_Probabilities.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 66 to 66_G_Parameters.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 67 to 67_G_Parameters.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 68 to 68_H_Retrieval_Collapse.md
+[2026-11-14 18:43:10] INFO - ingestion - Saved chunkm 69 to 69_I_Number_of_instances_per_dataset.md
+[2026-11-14 18:43:10] INFO - embedding - Fitted sparse embedder: 69 docs, 1446 terms, avgdl=72.7, k1=1.50, b=0.75, TokenizerOptions(stem=False, split_hyphen=False, numbers=False, extra_stopwords=True)
+[2026-11-14 18:43:10] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
+[2026-11-14 18:43:23] INFO - embedding - Completed embedding 69 texts.
+[2026-11-14 18:43:23] INFO - vector_database - Built 69 Qdrant points.
+[2026-11-14 18:43:23] INFO - vector_database - Connecting to Qdrant via url
+[2026-11-14 18:43:23] INFO - vector_database - Successfully connected to Qdrant
+[2026-11-14 18:43:23] INFO - vector_database - Collection nmk_chatbot_collection already exists
+[2026-11-14 18:43:23] INFO - vector_database - Deleted old points of source 2005.11401v4.md.
+[2026-11-14 18:43:23] INFO - vector_database - Upserted 69 points into collection nmk_chatbot_collection
+[2026-11-14 18:43:23] INFO - ingestion - --- All chunks have been upserted to vector store ---

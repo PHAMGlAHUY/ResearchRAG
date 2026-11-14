@@ -10,7 +10,6 @@ logger = logging.getLogger('ingestion')
 
 INPUT_PATH = Path(settings['data']['raw_dir'])
 
-
 def load_data(input_file: str | None = None) -> str:
     """Đọc file markdown/text và trả về nội dung dạng str."""
     if not input_file:

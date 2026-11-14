@@ -1,4 +1,4 @@
-## 2 Methods  
+# 2 Methods  
 We explore RAG models, which use the input sequence $x$ to retrieve text documents $z$ and use them as additional context when generating the target sequence $y$. As shown in Figure 1, our models leverage two components: (i) a retriever $p_\eta(z|x)$ with parameters $\eta$ that returns (top-K truncated) distributions over text passages given a query $x$ and (ii) a generator $p_\theta(y_i|x, z, y_{1:i-1})$ parametrized  
 <hr/>  
 <sup>1</sup> Code to run experiments with RAG has been open-sourced as part of the HuggingFace Transformers Library [66] and can be found at `https://github.com/huggingface/transformers/blob/master/examples/rag/`. An interactive demo of RAG models can be found at `https://huggingface.co/rag/`  
