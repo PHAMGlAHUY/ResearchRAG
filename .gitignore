@@ -4,4 +4,7 @@ frontend/dist/
 logs/
 qdrant_storage/
 .pytest_cache/
+data/processed/
+data/raw/
+generated / raw data
 __pycache__/

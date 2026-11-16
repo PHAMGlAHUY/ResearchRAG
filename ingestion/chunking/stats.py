@@ -1,22 +1,35 @@
+import argparse
+
 from ingestion.load_data import load_data
 from ingestion.chunking.chunker import split_text_into_chunks, _get_tokenizer
-from ingestion.chunking.context import contextualize
+from ingestion.chunking.context import contextualize, section_path
 
-NAME = "2005.11401v4.md"
 
-chunks = split_text_into_chunks(load_data(NAME), source=NAME)
-tok = _get_tokenizer()
+def main(name: str, limit: int = 512, tiny: int = 60) -> None:
+    chunks = split_text_into_chunks(load_data(name), source=name)
+    if not chunks:
+        raise SystemExit("Không có chunk nào")
 
-# đếm token của đúng chuỗi sẽ được embed (có tiền tố passage:)
-tokens = sorted(len(tok.encode("passage: " + contextualize(c))) for c in chunks)
-n = len(tokens)
+    tok = _get_tokenizer()
+    rows = sorted(
+        ((len(tok.encode("passage: " + contextualize(c))), c) for c in chunks),
+        key=lambda r: r[0],
+    )
+    t = [n for n, _ in rows]
 
-print(f"Số chunk       : {n}")
-print(f"Token min/med/max: {tokens[0]} / {tokens[n // 2]} / {tokens[-1]}")
-print(f"Chunk > 512 token: {sum(t > 512 for t in tokens)}  (phải bằng 0)")
-print(f"Chunk < 60 token : {sum(t < 60 for t in tokens)}   (chunk vụn)")
+    print(f"Số chunk         : {len(t)}")
+    print(f"Token min/med/max: {t[0]} / {t[len(t) // 2]} / {t[-1]}")
+    print(f"Chunk > {limit}     : {sum(x > limit for x in t)}  (phải bằng 0)")
+    print(f"Chunk < {tiny}      : {sum(x < tiny for x in t)}  (chunk vụn)")
+    print("3 chunk dài nhất:")
+    for n, c in rows[-3:][::-1]:
+        print(f"  {n:4d}  {section_path(c)[:60]!r}  {c.page_content[:60]!r}")
 
-# thêm vào cuối stats.py
-rows = sorted(((len(tok.encode("passage: " + contextualize(c))), c) for c in chunks), key=lambda x: -x[0])
-for n_tok, c in rows[:3]:
-    print(n_tok, c.metadata.get("Header 2") or c.metadata.get("Header 1"), repr(c.page_content[:100]))
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser(description="Thống kê token của các chunk")
+    ap.add_argument("name", help="ví dụ 2005.11401v4.md")
+    ap.add_argument("--limit", type=int, default=512)
+    ap.add_argument("--tiny", type=int, default=60)
+    a = ap.parse_args()
+    main(a.name, a.limit, a.tiny)
