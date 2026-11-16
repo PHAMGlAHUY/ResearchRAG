@@ -1,12 +1,21 @@
 from pathlib import Path
 from llama_cloud import LlamaCloud
 
+
+dir_path = Path('./raw')
+file_path = Path('s11858-023-01511-5.pdf')
+file_name = file_path.stem
+
+
 # Khởi tạo client (sẽ tự động lấy API key từ biến môi trường LLAMA_CLOUD_API_KEY)
 client = LlamaCloud(api_key='llx-lKq908RSXnZlBBs3ZLuA1dBsRSuprjdZ9pKGHmfS09OmNLqE')
 
 # 1. Tải file PDF lên hệ thống LlamaCloud
-pdf_path = Path("./raw/2005.11401v4.pdf")
-file_obj = client.files.create(file=pdf_path, purpose="parse")
+
+
+input_path = dir_path / file_path
+
+file_obj = client.files.create(file=input_path, purpose="parse")
 
 print(f"Đã tải file lên với ID: {file_obj.id}. Đang tiến hành parse...")
 
@@ -24,7 +33,7 @@ markdown_content = "\n\n".join(
 )
 
 # 4. Ghi ra file .md
-output_path = Path("./raw/2005.11401v4.md")
+output_path = dir_path / f"{file_name}.md"
 output_path.write_text(markdown_content, encoding="utf-8")
 
 print(f"Đã chuyển đổi và lưu thành công tại: {output_path}")

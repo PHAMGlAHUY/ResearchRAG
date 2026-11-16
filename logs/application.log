@@ -1256,3 +1256,13 @@
 [2026-11-14 21:43:15] INFO - embedding - Loading embedding model intfloat/multilingual-e5-small on cpu.
 [2026-11-14 21:44:22] INFO - vector_database - Connecting to Qdrant via url
 [2026-11-14 21:44:23] INFO - vector_database - Successfully connected to Qdrant
+[2026-11-15 22:37:15] INFO - ingestion - Removed 23558 chars from dropped sections
+[2026-11-15 22:37:19] WARNING - ingestion - [CHUNK_TINY] Chunk 20: 3 < 20
+[2026-11-15 22:37:19] INFO - ingestion - 2005.11401v4.md -> 54 chunks
+[2026-11-15 22:40:54] INFO - ingestion - Removed 23558 chars from dropped sections
+[2026-11-15 22:40:57] WARNING - ingestion - [CHUNK_TINY] Chunk 20: 3 < 20
+[2026-11-15 22:40:57] INFO - ingestion - 2005.11401v4.md -> 54 chunks
+[2026-11-15 22:40:57] INFO - ingestion - Dumped 54 chunks to data\processed\2005.11401v4
+[2026-11-16 13:23:49] INFO - ingestion - Removed 23558 chars from dropped sections
+[2026-11-16 13:23:53] WARNING - ingestion - [CHUNK_TINY] Chunk 20: 3 < 20
+[2026-11-16 13:23:53] INFO - ingestion - 2005.11401v4.md -> 54 chunks

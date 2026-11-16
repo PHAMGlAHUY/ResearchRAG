@@ -12,8 +12,18 @@ data:
 
 # Cau hinh chunk khi dung hybrid hoac chunking thong thuong
 chunking:
-  chunk_size: 1000
-  chunk_overlap: 100
+  mode: token
+  header_levels: auto
+  chunking:
+  numbered_headings: auto   # auto | true | false
+  join_hyphen: true         # false nếu markdown gốc, không phải từ PDF
+  drop_sections: []         # thêm tên mục cần bỏ, ví dụ ["Changelog"]
+  token_chunk_size: 400 # chua cho cho passage: va breadcrumb
+  token_chunk_overlap: 50
+  chunk_size: 1000     # mode: char
+  chunk_overlap: 150
+  min_chunk_size: 20
+  dump_chunks: false
 
 # Cau hinh embedding
 embedding:

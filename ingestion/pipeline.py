@@ -11,7 +11,7 @@ setup_logging()
 settings = load_settings()
 logger = logging.getLogger('ingestion')
 
-input_file_path = "2005.11401v4.md"
+input_file_path = "s11858-023-01511-5.md"
 
 def run_ingestion_pipeline():
     print("--- INITIATE PIPELINE INGESTION ---")
